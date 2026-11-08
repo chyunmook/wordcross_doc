@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>낱말교차로 — 안내·문의</title>
+  <script>
+    // ✏️ 이메일 주소 변경 시 여기 한 곳만 수정하세요.
+    const CONTACT_EMAIL = 'dev@sachick.chm.kr';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('[data-email]').forEach(el => {
+        el.textContent = CONTACT_EMAIL;
+        el.href = 'mailto:' + CONTACT_EMAIL;
+      });
+    });
+  </script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 15px; line-height: 1.8; color: #222; background: #f9f9f9;
+    }
+    .wrap { max-width: 680px; margin: 0 auto; padding: 48px 24px 80px; background: #fff; }
+    header { margin-bottom: 28px; border-bottom: 2px solid #2B59C3; padding-bottom: 16px; }
+    header h1 { font-size: 22px; font-weight: 700; color: #2B59C3; }
+    header p  { margin-top: 4px; color: #666; }
+    h2 {
+      font-size: 15px; font-weight: 700; margin: 30px 0 8px;
+      padding-left: 10px; border-left: 3px solid #2B59C3; color: #111;
+    }
+    p  { margin-bottom: 8px; color: #444; }
+    dl dt { font-weight: 700; color: #222; margin-top: 12px; }
+    dl dd { color: #444; }
+    a { color: #2B59C3; text-decoration: none; }
+    footer { margin-top: 56px; padding-top: 16px; border-top: 1px solid #eee; font-size: 13px; color: #aaa; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>낱말교차로</h1>
+    <p>뜻풀이 열쇠와 힌트 글자·초성을 보고 가로 세로 낱말을 채우는 우리말 십자낱말 퍼즐</p>
+  </header>
+
+  <h2>어떻게 하나요?</h2>
+  <p>가로 낱말과 세로 낱말이 십자말풀이처럼 만나는 격자에서 뜻풀이를 보고 빈칸에 알맞은 우리말 낱말을 입력합니다.
+    전체 단어를 입력해도 되고 노란 빈칸 글자만 입력해도 되며, 모든 칸을 채운 뒤 [완료] 버튼을 누르면 한 번에 정답을 확인합니다.
+    5판마다 등장하는 보너스 넌센스 퀴즈에서는 설명·초성·정답 3단계 힌트를 사용할 수 있어요.</p>
+
+  <h2>자주 묻는 질문</h2>
+  <dl>
+    <dt>기록은 어디에 저장되나요?</dt>
+    <dd>이용자의 기기 안에만 저장됩니다. 가입이나 로그인이 없고, 기록을 외부로 보내지 않습니다.</dd>
+    <dt>휴대폰을 바꾸면 기록이 옮겨지나요?</dt>
+    <dd>기기의 백업·복원 기능(iCloud, Google 백업)을 쓰면 함께 옮겨질 수 있습니다. 앱 자체의 기록 옮기기 기능은 없습니다.</dd>
+    <dt>하트는 어떻게 받나요?</dt>
+    <dd>처음 3개로 시작하고, 5판마다 나오는 보너스 스테이지를 처음 깰 때와 오늘의 퍼즐을 그날 처음 깰 때 1개씩 받습니다. 최대 10개까지 모을 수 있어요.</dd>
+    <dt>효과음이 안 나요.</dt>
+    <dd>기기가 무음·진동 모드이거나 볼륨이 꺼져 있으면 소리가 나지 않습니다. 게임 화면 위쪽 소리 버튼과 [설정 → 효과음]도 확인해 주세요.</dd>
+    <dt>처음부터 다시 하고 싶어요.</dt>
+    <dd>[설정 → 기록 모두 지우기]를 누르면 처음 설치한 상태로 돌아갑니다.</dd>
+  </dl>
+
+  <h2>문의</h2>
+  <p>오류 제보나 의견은 이메일로 보내 주세요: <a data-email href="#"></a></p>
+
+  <footer>
+    <a href="privacyPolicy.html">개인정보처리방침</a>
+  </footer>
+</div>
+</body>
+</html>
